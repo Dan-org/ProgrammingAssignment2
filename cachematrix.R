@@ -48,7 +48,7 @@ cacheSolve <- function(x, ...) {
   data <- x$get() # if no cache then calculate
   i <- solve(data, ...)
   x$setinverse(i)
-  i
+  i  # returns computed data
 }
 
 
